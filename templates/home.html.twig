@@ -1,0 +1,13 @@
+{% extends('base.html.twig') %}
+
+{% block body %}
+
+    {% for post in posts %}
+        <div>
+            <img src="{{ post.image }}" alt="{{ post.image }}">
+            <h1>{{ post.title  }}</h1>
+            <h2>{{ post.quote  }}</h2>
+        </div>
+    {% endfor %}
+
+{% endblock %}
